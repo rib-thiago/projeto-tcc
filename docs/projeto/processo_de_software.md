@@ -9,6 +9,15 @@ uma iniciativa de produto de software com padrao profissional, apta a gerar um
 entregavel tecnicamente defensavel, operacionalmente coerente e academicamente
 rastreavel.
 
+Este documento tem natureza **executivo-normativa**. Seu papel e consolidar a
+decisao metodologica central do projeto, seus principios, sua estrutura macro e
+seu nucleo normativo esperado. O detalhamento operacional das fases, dos gates,
+da dinamica cotidiana do trabalho e da orientacao pratica de execucao e
+complementado por:
+
+- `docs/projeto/fases_do_processo.md`
+- `docs/projeto/plano_operacional_do_processo.md`
+
 O processo aqui proposto deve orientar:
 
 - descoberta e delimitacao do problema
@@ -97,16 +106,37 @@ As macrofases completas do processo sao detalhadas em
 De forma sintetica, o processo e organizado em:
 
 1. enquadramento e mandato
-2. diagnostico do estado atual
-3. descoberta de produto e operacao
-4. engenharia de requisitos e regras de negocio
-5. modelagem e avaliacao de alternativas
-6. arquitetura, tecnologia e decisao
-7. governanca, politicas e forma de trabalho
-8. construcao, validacao e integracao
-9. transicao, operacao inicial e evolucao
+2. governanca minima de fundacao
+3. diagnostico do estado atual
+4. descoberta de produto e contexto operacional
+5. engenharia de requisitos e regras de negocio
+6. modelagem e avaliacao de alternativas
+7. arquitetura, tecnologia e decisao
+8. politicas fundacionais e governanca evoluida
+9. construcao, validacao e integracao
+10. transicao, operacao inicial e evolucao
 
-## 6. Unidade operacional do processo
+## 6. Gates do processo
+
+O processo adota gates minimos entre blocos decisorios relevantes. Eles existem
+para impedir avancos prematuros e preservar coerencia entre entendimento,
+decisao e execucao.
+
+De forma sintetica, os gates principais sao:
+
+- diagnostico para descoberta e requisitos: evita construir sobre leitura
+  superficial do legado
+- requisitos e modelagem para arquitetura e decisao: evita decidir a solucao sem
+  base minimamente formalizada
+- arquitetura e decisao para construcao: evita iniciar implementacao sem
+  fundacao tecnica suficiente
+- construcao para aceitacao operacional do MVP: evita chamar de MVP algo que
+  apenas executa localmente sem minimo operacional
+
+O detalhamento desses gates e mantido em
+`docs/projeto/fases_do_processo.md`.
+
+## 7. Unidade operacional do processo
 
 A unidade operacional do processo sera a **iteracao curta orientada a objetivo**.
 
@@ -118,24 +148,52 @@ Cada iteracao deve:
 - deixar rastro em issue, branch, PR e documentacao de iteracao
 - explicitar impactos em arquitetura, qualidade, seguranca e operacao quando
   aplicavel
+- declarar fase principal, objetivo principal, issue principal e artefato
+  principal esperado
+
+Uma iteracao pode tocar fases adjacentes, mas deve manter foco dominante
+explicito para evitar dispersao e perda de rastreabilidade.
 
 Duracao sugerida:
 
 - entre 3 e 10 dias corridos, conforme a complexidade do objetivo
 
-## 7. Fluxo de trabalho da iteracao
+## 8. Dinamica operacional
 
-1. selecionar objetivo da iteracao
-2. revisar riscos, dependencias e impacto arquitetural
-3. definir necessidade de modelagem, comparacao de alternativas ou parecer
-4. abrir ou refinar issues necessarias
-5. escolher uma unica issue principal para execucao ativa
-6. implementar ou documentar o trabalho em branch propria
-7. validar com testes e checklists aplicaveis
-8. abrir PR com rastreabilidade completa
-9. registrar resultado, decisoes e aprendizados da iteracao
+O funcionamento cotidiano do processo e detalhado em:
 
-## 8. Dimensoes obrigatorias
+- `docs/projeto/fases_do_processo.md`
+- `docs/projeto/plano_operacional_do_processo.md`
+- `docs/projeto/modelo_plano_de_iteracao.md`
+
+Em sintese:
+
+- fase define o foco dominante
+- iteracao define o objetivo tatico
+- o dia define o trabalho concreto
+- uma iteracao pode tocar fases adjacentes, desde que isso reduza risco ou
+  destrave decisao
+
+## 9. Nucleo normativo esperado
+
+Este processo pressupoe a consolidacao progressiva de um nucleo normativo do
+projeto. Sem detalhar o conteudo de cada politica, espera-se a existencia de
+artefatos normativos ao menos para os seguintes temas:
+
+- governanca do projeto
+- Git, branches, commits e pull requests
+- qualidade
+- testes
+- documentacao e modelagem
+- decisoes arquiteturais
+- seguranca e segredos
+- dependencias e servicos terceiros
+- configuracao por ambiente
+- deploy, distribuicao e operacao
+- dados, privacidade e conformidade
+- backup e restauracao
+
+## 10. Dimensoes obrigatorias
 
 O processo deve tratar, de forma integrada, as seguintes dimensoes:
 
