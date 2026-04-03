@@ -26,7 +26,21 @@ Pode ser produzido em paralelo:
 - jornadas
 - mapa de capacidades
 
-## 3. Fase 2 - Diagnostico do estado atual
+## 3. Fase 2 - Governanca minima de fundacao
+
+Produzir primeiro:
+
+- estrutura inicial de backlog
+- milestone inicial
+- project board inicial
+- convencao minima de fluxo de trabalho
+- rastreabilidade minima entre issue, branch e PR
+- organizacao inicial do repositorio
+- estrutura inicial documental
+- definicao provisoria de pronto
+- gestao inicial de riscos
+
+## 4. Fase 3 - Diagnostico do estado atual
 
 Produzir primeiro:
 
@@ -51,7 +65,22 @@ Pode ser produzido em paralelo:
 - inventario de dados
 - avaliacao inicial de seguranca
 
-## 4. Fase 3 - Descoberta de produto e requisitos
+## 5. Fase 4 - Descoberta de produto e contexto operacional
+
+Nesta fase predominam artefatos exploratorios e de enquadramento operacional.
+
+Produzir primeiro:
+
+- proposta de valor
+- perfis operacionais
+- jornadas
+- mapa de capacidades
+- hipoteses sobre CLI, Web, execucao local e remota
+- hipoteses sobre distribuicao e operacao minima
+
+## 6. Fase 5 - Engenharia de requisitos e regras de negocio
+
+Nesta fase predominam artefatos formais e rastreaveis.
 
 Produzir primeiro:
 
@@ -67,20 +96,14 @@ Depois:
 - especificacoes textuais dos casos prioritarios
 - matriz de rastreabilidade
 
-Pode ser produzido em paralelo:
-
-- jornadas refinadas
-- perfis operacionais refinados
-- mapa de capacidades
-
-## 5. Fase 4 - Modelagem
+## 7. Fase 6 - Modelagem e avaliacao de alternativas
 
 Produzir primeiro:
 
 - modelo de dominio
 - diagrama de casos de uso
-- modelagem `as-is`
-- modelagem `to-be`
+- consolidacao e refinamento da modelagem `as-is`
+- producao da modelagem `to-be`
 
 Depois:
 
@@ -89,6 +112,7 @@ Depois:
 - diagrama de atividades
 - C4 contexto
 - C4 containers
+- matrizes comparativas de alternativas
 
 Mais tarde, se necessario:
 
@@ -98,7 +122,7 @@ Mais tarde, se necessario:
 - diagrama de pacotes
 - 4+1 consolidado
 
-## 6. Fase 5 - Arquitetura e decisao
+## 8. Fase 7 - Arquitetura e decisao
 
 Produzir primeiro:
 
@@ -115,17 +139,17 @@ Depois:
 - mapa de modulos
 - arquitetura `to-be` consolidada
 
-## 7. Fase 6 - Governanca e politicas
+## 9. Fase 8 - Politicas fundacionais e governanca evoluida
 
 Produzir primeiro:
 
-- processo de software
+- revisao e consolidacao do processo de software
 - modelo de governanca
 - politica de governanca
-- definicao de pronto
+- definicao de pronto amadurecida
 - plano de iteracoes
 - backlog estruturado
-- gestao de riscos
+- gestao de riscos consolidada
 
 Depois, em bloco normativo:
 
@@ -141,33 +165,7 @@ Depois, em bloco normativo:
 - politica de dados e conformidade
 - politica de backup e restauracao
 
-## 8. Fase 7 - Qualidade, seguranca e operacao
-
-Produzir primeiro:
-
-- estrategia de testes
-- matriz de verificacao
-- politica de qualidade
-- politica de seguranca e segredos
-- modelo de ameacas
-- requisitos de seguranca
-- estrategia de ambientes
-- estrategia de configuracao por ambiente
-- estrategia de deploy
-- estrategia de distribuicao
-- observabilidade
-- plano de backup e restauracao
-
-Depois:
-
-- manual operacional
-- politica de retencao e descarte
-- runbook de incidentes
-- plano de release
-- politica de versionamento
-- changelog
-
-## 9. Fase 8 - Construcao e validacao
+## 10. Fase 9 - Construcao e validacao
 
 Produzir continuamente:
 
@@ -177,13 +175,21 @@ Produzir continuamente:
 - atualizacao de modelos e documentos
 - relatorios de validacao do incremento em marcos maiores
 
-## 10. Fase 9 - Transicao e defesa
+Entregas esperadas do primeiro incremento:
+
+- implementacao do incremento vertical inicial
+- CLI funcional
+- Web minima funcional
+
+## 11. Fase 10 - Transicao e defesa
 
 Produzir primeiro:
 
 - pacote de demonstracao
 - sintese executiva das frentes
 - conferencia final de aderencia
+- validacao do MVP operacional
+- entrega operacional minima documentada
 - relatorio de trade-offs do projeto
 - material de defesa
 
@@ -194,16 +200,17 @@ Depois:
 - manual operacional refinado
 - changelog consolidado
 
-## 11. Ordem logica geral
+## 12. Ordem logica geral
 
 Se sintetizada, a ordem logica geral fica assim:
 
 1. enquadramento
-2. diagnostico
-3. requisitos
-4. modelagem
-5. arquitetura e decisao
-6. governanca e politicas
-7. qualidade, seguranca e operacao
-8. construcao e validacao
-9. transicao e defesa
+2. governanca minima de fundacao
+3. diagnostico
+4. descoberta de produto e contexto operacional
+5. requisitos e regras de negocio
+6. modelagem e avaliacao de alternativas
+7. arquitetura e decisao
+8. politicas fundacionais e governanca evoluida
+9. construcao e validacao
+10. transicao e defesa
